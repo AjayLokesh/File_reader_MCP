@@ -2,7 +2,7 @@ from pathlib import Path
 from fastmcp import FastMCP
 
 # Configuration
-files_directory = Path("C:/Users/ajlok/Programming/MCP server (py)/MCP server test/mcp_test_files")
+files_directory = Path("C:/Users/ajlok/Programming/MCP server (py)/MCP server test/mcp_test_files")   # Change this to where you want the shared directory to be
 
 # Create the FastMCP instance
 mcp = FastMCP("File Reader Server")
@@ -51,7 +51,7 @@ def create_local_file(filename: str, content: str, location: str = "desktop") ->
     if not filename.endswith(".txt"):
         filename += ".txt"
     
-    # Define common locations
+    # Define common locations. Where Claude will be able to create files.
     home = Path.home()
     locations = {
         "desktop": home / "Desktop",
