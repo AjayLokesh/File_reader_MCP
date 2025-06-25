@@ -9,15 +9,10 @@ MCP stands for Modular Command Platform. It is a lightweight framework that lets
 MCP lets you define "tools" — small, reusable functions — that an AI agent — Claude in this case — can call as part of its reasoning process. Like giving an LLM a list of actions it can use to interact with your computer or application.
 
 The MCP server exposes these tools through a local API, so agents can:
-
-Read files
-
-Write to disk
-
-Query data
-
-Control apps or hardware
-
+- Read files
+- Write to disk
+- Query data
+- Control apps or hardware
 ...and more, in a modular, secure way
 
 FastMCP is a simplified version optimized for fast development and demos.
@@ -53,20 +48,18 @@ This starts the FastMCP server and initializes the shared file directory.
 
 # Tools
 create_file(filename, content)
-Create a new .txt file in the shared directory.
+- Create a new .txt file in the shared directory.
 
 create_local_file(filename, content, location="desktop")
-Create a .txt file in a local directory (Desktop, Documents, Downloads, or a custom path).
-
-filename: Must end with .txt
-
-location: Choose from "desktop", "documents", "downloads", or a full path
+- Create a .txt file in a local directory (Desktop, Documents, Downloads, or a custom path).
+- filename: Must end with .txt
+- location: Choose from "desktop", "documents", "downloads", or a full path
 
 list_files()
-Returns a list of all .txt files in the shared directory.
+- Returns a list of all .txt files in the shared directory.
 
 read_file(filename)
-Reads and returns the content of the specified .txt file.
+- Reads and returns the content of the specified .txt file.
 
 test_new_function()
-Simple tool to verify that the FastMCP server is working.
+- Simple tool to verify that the FastMCP server is working.
