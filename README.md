@@ -3,6 +3,25 @@ create MCP server to either list, read, or write files in your shared directory 
 
 change the files_directory location and "args" in claude_desktop_config.json accordingly
 
+# MCP
+MCP stands for Modular Command Platform. It is a lightweight framework that lets you build AI agent servers using Python.
+
+MCP lets you define "tools" — small, reusable functions — that an AI agent — Claude in this case — can call as part of its reasoning process. Like giving an LLM a list of actions it can use to interact with your computer or application.
+
+The MCP server exposes these tools through a local API, so agents can:
+
+Read files
+
+Write to disk
+
+Query data
+
+Control apps or hardware
+
+...and more, in a modular, secure way
+
+FastMCP is a simplified version optimized for fast development and demos.
+
  # Features
 Create .txt files with custom content
 
