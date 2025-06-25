@@ -3,7 +3,7 @@ create MCP server to either list, read, or write files in your shared directory 
 
 change the files_directory location and "args" in claude_desktop_config.json accordingly
 
-# MCP
+## MCP
 MCP stands for Modular Command Platform. It is a lightweight framework that lets you build AI agent servers using Python.
 
 MCP lets you define "tools" — small, reusable functions — that an AI agent — Claude in this case — can call as part of its reasoning process. Like giving an LLM a list of actions it can use to interact with your computer or application.
@@ -17,7 +17,7 @@ The MCP server exposes these tools through a local API, so agents can:
 
 FastMCP is a simplified version optimized for fast development and demos.
 
- # Features
+## Features
 Create .txt files with custom content
 
 List all .txt files in a target directory
@@ -30,14 +30,14 @@ Automatically bootstraps with a welcome.txt file on first run
 
 Simple test endpoint to verify server functionality
 
-# Directory Setup
+## Directory Setup
 The server uses a specific directory for storing its files:
 
 C:/"whatever file path you want"
 
 If the directory doesn't exist, it's created automatically. A default file welcome.txt is added with a welcome message on the first run.
 
-# Requirements
+## Requirements
 Python 3.8+
 
 fastmcp library (pip install fastmcp)
@@ -46,7 +46,7 @@ Running the Server (python file_reader_server.py)
 
 This starts the FastMCP server and initializes the shared file directory.
 
-# Tools
+## Tools
 create_file(filename, content)
 - Create a new .txt file in the shared directory.
 
